@@ -10,12 +10,14 @@ import ProductDetails from './customer/components/ProductDetails/ProductDetails'
 import Navigation from './customer/components/navigation/Navigation';
 import HomePage from './customer/pages/Homepage/HomePage';
 import CustomerRouters from './Routers/CustomerRouters';
+import AdminRouters from './Routers/AdminRouters';
 
 function App() {
   return (
     <div className="">
       <Routes>
         <Route path='/*' element={<CustomerRouters />}></Route>
+        <Route path='/admin/*' element={<AdminRouters />}></Route>
       </Routes>
     </div>
   );
